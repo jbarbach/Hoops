@@ -9,11 +9,8 @@ hoops.import.fun1 <- function(GPX)
 
 Hoops <-read.csv(file.choose(), sep=",",header=TRUE)
 attach (Hoops)
-hist(PTS)
 plot(Hoops[,12], Hoops[,13], xlab="Points", ylab="Rebounds")
-plot(training_matrix[,12],training_matrix[,13], xlab="Points", ylab="Rebounds")
-plot(training_matrix[,12],training_matrix[,13], xlab="Points", ylab="Rebounds")
-attach(training_matrix)
+
 
 
 plot(Hoops[,12], Hoops[,13], xlab="Points", ylab="Rebounds", asp=2)

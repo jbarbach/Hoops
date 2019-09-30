@@ -1,6 +1,6 @@
 hoops.import.fun1 <- function(GPX)
 { 
-	training_matrix <-read.csv("/Users/joshbarbach/Dropbox/SFL/Hoops-R-Training1.csv", header=TRUE)
+	training_matrix <-read.csv("Hoops-R-Training1.csv", header=TRUE)
 	AveGP<-mean(training_matrix[,2])
 	rowcount<-length(training_matrix[,1])
 	GPcount <- sum(training_matrix[,2] > AveGP+5)

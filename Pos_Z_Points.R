@@ -1,7 +1,7 @@
 ## Function determines the COUNT of the players with positive Z scores in Points Scored
 Pos_Z_PTS.fun <-function()
 {
-	PtsMean<-mean(Hoops$PTS.)
+PtsMean<-mean(Hoops$PTS.)
 PtsSd<-sd(Hoops$PTS.)
 PtsZ<-(Hoops$PTS.-PtsMean)/PtsSd
 PtsZCount<-sum(PtsZ>0)
